@@ -1,0 +1,147 @@
+#mainTable{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+	table-layout:fixed
+}
+#mainTable td{
+	white-space: nowrap;
+}
+
+#myCanvas{
+}
+
+#sideBar{
+	width: 25%;
+	max-width: 250px;
+	min-width: 250px;
+}
+
+.sideBarItems{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	border-radius: 5px;
+	background-color: #999;
+
+	padding: 15px;
+}
+
+#canvasWrapper{
+	display: flex;
+	align-items: center;
+    justify-content: center;
+
+	height: 100%;
+	overflow: auto;
+}
+
+#canvasTd{
+	text-align: center;
+}
+
+#botoes, #prep, #loading{
+	height: 85%;
+}
+
+#input{
+	height: 15%;
+	background-color: #757575;
+}
+
+.btn{
+	width: 100%;
+	padding: 5px;
+
+	margin-top: 3px;
+	margin-bottom: 3px;
+	
+	border: none;
+	border-radius: 5px;
+
+    font-weight: bold;
+
+	background-color: #ccc;
+	transition: all .25s;
+}
+.btn:hover{
+	background-color: #ddd;
+	box-shadow: white 0px 0px 5px;
+	transition: all .25s;
+}
+.btn:focus{
+	outline: none;
+	transition: all .25s;
+}
+
+#prep .label{
+	color: white;
+	font-weight: 900;
+	font-family: "Arial";
+}
+#prep input{
+    /*width: calc(100% - 10px);*/
+	height: 20px;
+	border-radius: 3px;
+	border: none;
+	padding: 5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#prep input:focus{
+	outline: none;
+}
+
+#prep h2{
+	text-align: center;
+	font-family: "Arial";
+	color: white;
+}
+
+#send-wrap{
+	margin-left: -3px;
+	margin-right: -3px;
+}
+#send-wrap button{
+	width: calc(50% - 6px);
+	margin: 3px; 
+}
+
+#loading > img{
+	width: 50px;
+}
+
+#UndoRedo button:last-child {
+    margin-left: 1px;
+    width: calc(50% - 1px);
+}
+#UndoRedo button:first-child {
+    margin-right: 1px;
+    width: calc(50% - 1px);
+}
+
+.form_row{
+	display: flex;
+	width: 100%;
+}
+.form_row div, .form_row input{
+	width: 50%;
+	align-self: center;
+	flex-grow: 1;
+	flex-shrink: 1;
+	margin-bottom: 5px;
+}
+
+.checkbox, .radio{
+    box-shadow: 0px 0px 3px white;
+}
+hr{
+	width: 100%;
+}

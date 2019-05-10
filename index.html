@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+	<meta charset="utf-8">
+
+	<script src="main.js"></script>
+	<link type="text/css" rel="stylesheet" charset="UTF-8" href="main.css">
+</head>
+<body onload="initAll()">
+
+	<a id="download_aux" href="" hidden></a>
+
+	<table id="mainTable">
+		<tr>
+			<td id="canvasTd">
+				<div id="canvasWrapper">
+					<canvas id="myCanvas" style="display: none;" width="800" height="600"/>
+				</div>
+			</td>
+			<td id="sideBar">
+				<div id="botoes" class="sideBarItems"></div>
+				<div id="prep" class="sideBarItems" style="display: none;">
+					<div id="prep-options"></div>
+					<div id="send-wrap"><button class="btn" id="cancel">Cancel</button><button class="btn" id="confirm">Ok</button></div>
+				</div>
+			
+				<div id="input" class="sideBarItems">
+					<button id="upload_btn" class="btn" onclick="uploadFile()">Open</button>
+					<input id="file-input" onchange="handleImage()" type="file" name="name" style="display:none" />
+				</div>
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
